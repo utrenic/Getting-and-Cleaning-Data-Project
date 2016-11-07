@@ -19,3 +19,14 @@ Appropriately labels the data set with descriptive variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
+## Run from command line
+1. Clone this repo
+2. Run the script:
+   $Rscript run_analysis.R
+3. The final result is stored in "Data2" data frame. And its content is written to "tidydata.txt" file. 
+
+## Run from Rstudio
+1. Clone this repo
+2. Import run_analysis.Rmd to Rstudio
+3. Click "Knit HTML" button to generate html output. You can view it with a browser.
+4. The final result is saved into a file called "tidydata.txt".
