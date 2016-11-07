@@ -3,6 +3,23 @@ This document describes the code inside run_analysis.R.
 
 The code is divided (by comments) into several sections: 
 
+### variables
+1.    fileUrl: the url link to the data file
+2.    destf1: destination file name (Dataset.zip)
+3.    fs: list of the files in "UCI HAR Dataset" directory.
+4.    data_Act_train: data frame containing the Activity train data
+5.    data_Act_test: data frame containing the Activity test data
+6.    data_Subject_train: data frame containing the Subject train data
+7.    data_Subject_test: data frame containing the Subject test data
+8.    data_Features_train: data frame containing the Features train data
+9.    data_Features_test: data frame containing the Features test data
+10.   data_Activity: data frame combines the rows of data_Act_train and data_Act_test
+11.   data_Subject: data frame combines the rows of data_Subject_train and data_Subject_test
+12.   data_Features: data frame combines the rows of data_Features_train and data_Features_test
+13.   Data: the final merged data frame for all data
+14.   actLabels: stores descriptive activity names
+15.   Data2: subsetted Data for the tidydata set
+
 ###Downloading and loading data
 	i. 	Download the UCI HAR dataset to “./data/Dataset.zip” called destf1
 	ii. Unzip the zip file (destf1)
